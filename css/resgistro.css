@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(214, 212, 212, 0.865);
+}
+
+.registro_dato{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.registro_dato p{
+    font-size: 20px;
+    color: rgb(5, 91, 54);
+    font-family: serif;
+}
+
+.form{
+    width: 700px;
+    height: 500px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
+}
+
+.sesion{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+.sesion img{
+    width: 50px;
+    height: 50px;
+}
+
+.sesion h2{
+    color: #1C3D3E;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenido{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.nombre{
+    width: 96%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.direccion{
+    width: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contra{
+    width: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nom{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit input{
+    width: 90%;
+    height: 40px;
+}
+
+.resgistro{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.resgistro span{
+    font-size: 17px;
+    font-family: serif;
+    color: #000000;
+}
+
+.resgistro a{
+    font-family: serif;
+    font-weight: 500;
+    /* text-decoration: none; */
+    color: #1C3D3E;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        color: rgb(13, 140, 219);
+    }
+}
+
+.volver{
+    margin-top: 20px;
+}
+
+.volver a{
+    font-size: 18px;
+    color: #033b18;
+    text-decoration: none;
+    &:hover{
+        color: rgb(134, 119, 119);
+    }
+}

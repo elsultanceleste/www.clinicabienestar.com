@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (width < 850px) {
+
+    .banner_texto h1{
+        text-align: center;
+    }
+
+    .banner_p p{
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .cont_contacto{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .caja{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .informe{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .form_envio{
+        width: 100%;
+    }
+}
+
+.banner_contact{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/sobre.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner_texto{
+    width: 90%;
+    height: 60px;
+}
+
+.banner_texto h1{
+    font-weight: bolder;
+    color: white;
+    font-family: serif;
+}
+
+.banner_p{
+    width: 90%;
+    height: auto;
+}
+
+.banner_p p{
+    color: white;
+    font-family: serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.cont_contacto{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.caja{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_envio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informe{
+    width: 400px;
+    height: 350px;
+}
+
+.con_text{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.con_text h4{
+    font-size: 25px;
+    color: grey;
+}
+
+.con_texti{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+
+.con_texti span{
+    font-size: 20px;
+    color: rgb(102, 107, 102);
+    margin-left: 10px;
+    font-family: serif;
+}
+
+.for{
+    width: 650px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nombre{
+    width: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nombre input{
+    border: 2px solid rgb(2, 77, 2);
+}
+
+.contact{
+    width: 95%;
+    height: 38px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.correo{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.correo input{
+    border: 2px solid rgb(2, 77, 2);
+}
+
+.asunto{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asunto input{
+    border: 2px solid rgb(2, 77, 2);
+}
+
+.mensaje{
+    width: 95%;
+    height: 180px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensaje textarea{
+    height: 160px;
+    border: 2px solid rgb(2, 77, 2);
+}
+
+.enviar{
+    width: 95%;
+    height: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.enviar input{
+    width: 200px;
+    transition: 0.5s ease-out;
+    &:hover{
+        background-color: rgb(13, 70, 13);
+        border: none;
+    }
+}
+

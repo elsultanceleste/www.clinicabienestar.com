@@ -1,0 +1,38 @@
+body {
+    background-color: #f4f6f8;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 auto 20px; /* Centra horizontalmente */
+    display: block; /* Asegura que el logo sea tratado como un bloque */
+}
+
+.btn-login {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}

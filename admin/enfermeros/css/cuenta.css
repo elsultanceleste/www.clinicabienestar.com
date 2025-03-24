@@ -1,0 +1,85 @@
+.Confi {
+    height: 300px;
+    position: relative;
+    background-color: #417b61;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    .ConfiP{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        position: absolute;
+        top: 200px;
+        left: 42%;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+    }
+    .confInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        .titulo{
+            border-bottom: solid 1px white;
+            font-size: 30px;
+            padding: 2px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .confiAccio{
+        position: absolute;
+        top: 255px;
+        left: 2%;
+        .btnActua{
+            background-color: rgb(255, 252, 252);
+        }
+        .btnCerrarS{
+            background-color: rgba(169, 166, 166, 0.411);
+            color: red;
+        }
+
+    }
+    .btnVolver{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+       
+    }
+}
+
+.modal-footer{
+    .guardar{
+        background-color: #417b61;
+        color: white;
+    }
+}
+@media screen and (max-width: 768px){
+    .Confi{
+        
+        .ConfiP{
+            width: 100px;
+            height: 100px;
+            top: 250px;
+            left: 70%;
+        }
+        
+        
+    }
+    
+}
