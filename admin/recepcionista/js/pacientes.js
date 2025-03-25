@@ -105,7 +105,7 @@ function cargarPaceintes() {
                                 <th scope="row">${paciente.id}</th>
                                 <td>${paciente.nombre}</td>
                                 <td>${paciente.apellido}</td>
-                                <td>${paciente.fecha_nacimiento}</td>
+                                <td>${paciente.edad}</td>
                                 <td>${paciente.direccion}</td>
                                 <td>${
                                   alergias || "No hay alergias registradas"
@@ -170,6 +170,9 @@ function formEditarPaciente(id_paciente) {
   xhr.open("POST", "./php/pacientes.php", true);
   xhr.addEventListener("load", () => {
     if (xhr.status === 200) {
+
+      console.log(xhr.response);
+      
       let response = JSON.parse(xhr.response);
 
       if (response.status === "success") {
@@ -179,8 +182,8 @@ function formEditarPaciente(id_paciente) {
         document.getElementById("id_pacienteA").value = paciente.id;
         document.getElementById("nombreA").value = paciente.nombre;
         document.getElementById("apellidoA").value = paciente.apellido;
-        document.getElementById("fechaNacimientoA").value =
-          paciente.fecha_nacimiento;
+        document.getElementById("edad").value =
+          paciente.edad;
         document.getElementById("direccionA").value = paciente.direccion;
         document.getElementById("telefonoA").value = paciente.telefono;
         document.getElementById("emailA").value = paciente.email;

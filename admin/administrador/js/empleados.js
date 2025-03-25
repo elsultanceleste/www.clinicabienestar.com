@@ -95,9 +95,11 @@ formNuevoEmpleado.addEventListener("submit", (e) => {
           icon: "success",
           title: respuesta.mensaje,
         });
-        
+        cargarEmpleados();
         
       } else {
+        formNuevoEmpleado.reset();
+        cargarEmpleados();
         Swal.fire({
           icon: "error",
           title: "Error",

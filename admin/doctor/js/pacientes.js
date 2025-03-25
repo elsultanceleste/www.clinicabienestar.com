@@ -65,9 +65,6 @@ function verHistorial(pacienteId) {
                                     <button onclick="generarPDF(${registro.id})" class="btn btn-primary btn-sm">
                                         <i class="fas fa-file-pdf"></i> PDF
                                     </button>
-                                    <button onclick="editarHistorial(${registro.id})" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalEditarHistorial">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
                                 </div>
                             </td>
                         </tr>

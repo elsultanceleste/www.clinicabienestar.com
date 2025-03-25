@@ -227,3 +227,14 @@
     }
 }
 
+.colored-toast {
+    border-radius: 8px !important;
+    padding: 15px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.toast-title {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+

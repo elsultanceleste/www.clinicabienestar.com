@@ -7,7 +7,7 @@ if (isset($_POST['accion']) && $_POST['accion'] == 'nuevoPaciente') {
     $telefono = $_POST['telefono'];
     $direccion = $_POST['direccion'];
     $sexo = $_POST['genero'];
-    $fechaNacimiento = $_POST['fechaNacimiento'];
+    $edad = $_POST['edad'];
     $correo = $_POST['email'];
     $alergias = $_POST['alergias'];
 
@@ -15,7 +15,7 @@ if (isset($_POST['accion']) && $_POST['accion'] == 'nuevoPaciente') {
     $result = mysqli_query($conexion, $sql);
     $datosRol = mysqli_fetch_assoc($result);
     $rol_id = $datosRol['id'];
-    $sql = "INSERT INTO pacientes (nombre, apellido, telefono, direccion, genero, fecha_nacimiento, email, id_rol, alergias) VALUES ('$nombre', '$apellido', '$telefono', '$direccion', '$sexo', '$fechaNacimiento', '$correo', '$rol_id', '$alergias')";
+    $sql = "INSERT INTO pacientes (nombre, apellido, telefono, direccion, genero, edad, email, id_rol, alergias) VALUES ('$nombre', '$apellido', '$telefono', '$direccion', '$sexo', '$edad', '$correo', '$rol_id', '$alergias')";
     $result = mysqli_query($conexion, $sql);
     if ($result) {
         echo 1;
@@ -88,7 +88,7 @@ INNER JOIN empleados e ON m.id_empleado= e.id;";
     $id_paciente = $_POST['id_pacienteA'];
     $nombre = $_POST['nombreA'];
     $apellido = $_POST['apellidoA'];
-    $fecha_nacimiento = $_POST['fechaNacimientoA'];
+    $edad = $_POST['edad'];
     $direccion = $_POST['direccionA'];
     $telefono = $_POST['telefonoA'];
     $email = $_POST['emailA'];
@@ -98,7 +98,7 @@ INNER JOIN empleados e ON m.id_empleado= e.id;";
     $sql = "UPDATE pacientes 
             SET nombre = '$nombre', 
                 apellido = '$apellido', 
-                fecha_nacimiento = '$fecha_nacimiento', 
+                edad = '$edad', 
                 direccion = '$direccion', 
                 telefono = '$telefono', 
                 email = '$email', 

@@ -11,9 +11,6 @@ CREATE TABLE rol(
     nombre VARCHAR(100) NOT NULL
 );
 
-
-
-
     CREATE TABLE pacientes (
         id INT AUTO_INCREMENT PRIMARY KEY,
         nombre VARCHAR(100) NOT NULL,
@@ -28,7 +25,7 @@ CREATE TABLE rol(
         id_rol INT,
         FOREIGN KEY (id_rol) REFERENCES rol(id)
     );
-SELECT * FROM pacientes;
+
 
 
 CREATE TABLE empleados(

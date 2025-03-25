@@ -90,7 +90,7 @@ if (!isset($_SESSION['id'])) {
                                 <th class="bg-success text-white" scope="col">#</th>
                                 <th class="bg-success text-white" scope="col">Nombre</th>
                                 <th class="bg-success text-white" scope="col">Apellidos</th>
-                                <th class="bg-success text-white" scope="col">Fecha de nacimiento</th>
+                                <th class="bg-success text-white" scope="col">Edad</th>
                                 <th class="bg-success text-white" scope="col">Direccion</th>
                                 <th class="bg-success text-white" scope="col">Alergias</th>
                                 <th class="bg-success text-white" scope="col">Contacto</th>
@@ -100,55 +100,7 @@ if (!isset($_SESSION['id'])) {
                             </tr>
                         </thead>
                         <tbody class="text-center" id="tablaPacientes">
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Zabulon</td>
-                                <td>Sima Oluy</td>
-                                <td>32 años</td>
-                                <td>22212345</td>
-                                <td>12-12-2024</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <a class="btn btn-primary"><i class="fa-solid fa-book-medical"></i></a>
-                                        <a class="btn btn-success"><i class="fa-solid fa-hospital-user"></i></a>
-                                        <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCita"><i class="fa-solid fa-calendar"></i></a>
-                                    </div>
-                                </td>
-
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Zabulon</td>
-                                <td>Sima Oluy</td>
-                                <td>32 años</td>
-                                <td>22212345</td>
-                                <td>12-12-2024</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <a class="btn btn-primary"><i class="fa-solid fa-book-medical"></i></a>
-                                        <a class="btn btn-success"><i class="fa-solid fa-hospital-user"></i></a>
-                                        <a class="btn btn-dark"><i class="fa-solid fa-calendar"></i></a>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Zabulon</td>
-                                <td>Sima Oluy</td>
-                                <td>32 años</td>
-                                <td>22212345</td>
-                                <td>12-12-2024</td>
-                                <td>
-                                    <div class="btn-group">
-                                        <a class="btn btn-primary"><i class="fa-solid fa-book-medical"></i></a>
-                                        <a class="btn btn-success"><i class="fa-solid fa-hospital-user"></i></a>
-                                        <a class="btn btn-dark"><i class="fa-solid fa-calendar"></i></a>
-                                    </div>
-                                </td>
-
-                            </tr>
+                           
                         </tbody>
                     </table>
                 </div>
@@ -182,8 +134,8 @@ if (!isset($_SESSION['id'])) {
                                     <input type="text" class="form-control" id="apellidos" name="apellido">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="edad" class="form-label">Fecha de nacimiento</label>
-                                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                                    <label for="edad" class="form-label">Edad</label>
+                                    <input type="number" class="form-control" id="edad" name="edad">
                                 </div>
 
                                 <div class="mb-3">
@@ -250,8 +202,8 @@ if (!isset($_SESSION['id'])) {
                                     <input type="text" class="form-control" id="apellidoA" name="apellidoA">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="edad" class="form-label">Fecha de nacimiento</label>
-                                    <input type="date" class="form-control" id="fechaNacimientoA" name="fechaNacimientoA">
+                                    <label for="edad" class="form-label">Edad</label>
+                                    <input type="number" class="form-control" id="edad" name="edad">
                                 </div>
 
                                 <div class="mb-3">

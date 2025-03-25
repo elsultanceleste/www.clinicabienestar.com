@@ -8,22 +8,26 @@ xhr.addEventListener('load',function(){
     let medico = JSON.parse(xhr.response);
     let infor = document.getElementById('infor');
 
-    medico.forEach(e=>{
-        infor.innerHTML+=`
-            <div class="imagen">
-                <div class="ima">
-                    <img src="./admin/administrador/img/perfiles/${e.perfil_medico}" alt="">
+    if (medico.length > 0) {
+        medico.forEach(e=>{
+            infor.innerHTML+=`
+                <div class="imagen">
+                    <div class="ima">
+                        <img src="./admin/administrador/img/perfiles/${e.perfil_medico}" alt="">
+                    </div>
+                    <div class="nom_medico">
+                        <p>Dr  ${e.nombre_medico} ${e.apellido_medico}</p>
+                        <p>Especialidad: ${e.especialidad}</p>
+                    </div>
+                    <div class="leer_mas">
+                        <button onclick="medicopropio(${e.id_medico})" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Conocer más</button>
+                    </div>
                 </div>
-                <div class="nom_medico">
-                    <p>Dr  ${e.nombre_medico} ${e.apellido_medico}</p>
-                    <p>Especialidad: ${e.especialidad}</p>
-                </div>
-                <div class="leer_mas">
-                    <button onclick="medicopropio(${e.id_medico})" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Conocer más</button>
-                </div>
-            </div>
-        `
-    });
+            `
+        });
+    }else{
+        infor.innerHTML = `<div class="text-center">No hay medicos registrados</div>`
+    }
 });
 
 xhr.send();

@@ -41,23 +41,23 @@
             </div>
         </div>
         <div class="form_envio">
-            <form action="" class="for">
+            <form action="./controllers/process_contact.php" method="POST" class="for" id="contactForm">
                 <div class="nombre">
-                    <input class="form-control" type="text" placeholder="Introduzca su nombre">
+                    <input class="form-control" type="text" name="nombre" placeholder="Introduzca su nombre" required>
                 </div>
                 <div class="contact">
                     <div class="correo">
-                        <input class="form-control" type="text" placeholder="Introduzca su correo">
+                        <input class="form-control" type="email" name="email" placeholder="Introduzca su correo" required>
                     </div>
                     <div class="asunto">
-                        <input class="form-control" type="text" placeholder="Asunto">
+                        <input class="form-control" type="text" name="asunto" placeholder="Asunto" required>
                     </div>
                 </div>
                 <div class="mensaje">
-                    <textarea class="form-control" name="" id="" placeholder="Mensaje"></textarea>
+                    <textarea class="form-control" name="mensaje" placeholder="Mensaje" required></textarea>
                 </div>
                 <div class="enviar">
-                    <input class="btn btn-primary" type="submit">
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                 </div>
             </form>
         </div>
@@ -68,5 +68,7 @@
     <script src="./js/all.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/sweetalert2.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 </html>

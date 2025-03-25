@@ -93,7 +93,6 @@ if (!isset($_SESSION['id'])) {
                                 </div>
                                 <div class="modal-body">
                                     <!-- Aquí irá el contenido del modal -->
-                                    <!-- Update the modal table structure -->
                                     <table class="table">
                                         <thead>
                                             <tr>
@@ -105,7 +104,7 @@ if (!isset($_SESSION['id'])) {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- Data will be loaded dynamically -->
+                                          
                                         </tbody>
                                     </table>
                                 </div>
